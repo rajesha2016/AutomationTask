@@ -10,6 +10,8 @@ TestNg framework- v6.14.3,
 
 Design Pattern- Singleton Design Pattern of JAVA  & 
 
-Page Object Model, Selenium-WebDriver
+Page Object Model, 
+
+Selenium-WebDriver
 
 
