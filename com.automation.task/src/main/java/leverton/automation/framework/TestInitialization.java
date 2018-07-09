@@ -4,6 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+/**
+ * @author r.moharana
+ * This class initalize UI test and config.properties file
+ * Browser driver session starts from here
+ */
 public class TestInitialization extends Utilities{
 	
 	static WebDriverSingleton driverSession=WebDriverSingleton.getInstanceofWebdriver();

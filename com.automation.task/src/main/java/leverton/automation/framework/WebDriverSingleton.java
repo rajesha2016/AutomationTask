@@ -20,7 +20,8 @@ public class WebDriverSingleton {
 		
 		// Constructor
 		private WebDriverSingleton() {
-			// Please change the path here for Mac machine to ' System.getProperty("user.dir")+"//chromedriver.exe" '
+			
+			//Please change the path here for Mac machine to ' System.getProperty("user.dir")+"//chromedriver.exe" ' replace '\\' with '//'
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\chromedriver.exe");
 			driver= new ChromeDriver();
 			driver.manage().window().maximize();

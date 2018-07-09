@@ -5,7 +5,7 @@ import java.util.Properties;
 
 /**
  * @author r.moharana
- * This class hold all generic methods to help tests
+ * This class hold all generic methods like initialization of properties file to help tests
  */
 public class Utilities {
 	
@@ -19,6 +19,8 @@ public static Properties config=null;
 
 		// read properties file
 		try {
+			
+			//for Mac machine please change ' System.getProperty("user.dir")+ "//config.properties" ' replace '\\' with '//'
 			FileInputStream readConfig = new FileInputStream(System.getProperty("user.dir")+ "\\config.properties");
 
 			// load properties file
