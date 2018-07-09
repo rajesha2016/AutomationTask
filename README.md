@@ -1,4 +1,4 @@
-# UI and API AutomationTask
+# UI and API AutomationTask:
 
 Tools & Frameworks used:
 
@@ -24,7 +24,7 @@ TestNG has @DataProvider annotation which is used for Parameterizing the tests, 
 
 config.properties file holds the URL of both UI & API
 
-# Test Execution
+# Test Execution:
 
 Note: I have developed in Windows machine, if you are running this project in Mac Machine request to change in following two places.
 1. Inside 'WebDriverSingleton.java' class constructor where chromedriver.exe path has mentioned. Change the statement ' System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\\chromedriver.exe"); ' to ' System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//chromedriver.exe"); '
