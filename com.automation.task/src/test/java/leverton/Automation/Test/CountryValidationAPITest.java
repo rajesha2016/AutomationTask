@@ -34,6 +34,7 @@ public class CountryValidationAPITest extends Utilities{
 	
 				//verify response code of API
 				if (conn.getResponseCode() != 200) {
+					
 					throw new RuntimeException(" HTTP error code : "+ conn.getResponseCode());
 				}
 				
@@ -49,7 +50,7 @@ public class CountryValidationAPITest extends Utilities{
 				JSONArray jsonarray=new JSONArray(entireResponse);
 				List<String> countries=new ArrayList<String>();
 				
-				//store all countries name
+				//get all countries name
 				for (int i = 0; i < jsonarray.length(); i++) {
 					
 					countries.add(jsonarray.getJSONObject(i).getString("name"));
@@ -61,7 +62,7 @@ public class CountryValidationAPITest extends Utilities{
 				Assert.assertTrue(countries.contains(_countryNameToBeValidate));
 				
 				
-				System.out.println("*** API Test Completed for country "+_countryNameToBeValidate+" ***" );
+				System.out.println("*** API Test passed for country "+_countryNameToBeValidate+" ***" );
 			
 		}catch(Exception e) {
 			

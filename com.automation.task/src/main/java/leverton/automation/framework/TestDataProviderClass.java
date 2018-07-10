@@ -17,6 +17,7 @@ public class TestDataProviderClass {
 	 */
 	@DataProvider(name="InvalidUILoginTestData")
     public static Object[][] getDataforInvalidLogin(){
+		
         return new Object[][] {
         	
             { "wrongusername1", "password1","Sorry, we were not able to find a user with that username and password."},
@@ -36,9 +37,10 @@ public class TestDataProviderClass {
 	 */
 	@DataProvider(name="CountryVerificationTestData")
     public static Object[][] getDataforAPI(){
+		
         return new Object[][] {
         	
-            { "Germany" },
+            { "Germany"},
             { "India"},
             { "Australia"}
             
