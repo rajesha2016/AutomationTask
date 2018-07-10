@@ -16,7 +16,7 @@ public class TestDataProviderClass {
 	 * Columns - Number of parameters in test data. 
 	 */
 	@DataProvider(name="InvalidUILoginTestData")
-    public static Object[][] getDataforInvalidLogin(){
+    public static Object[][] getTestDataforInvalidLogin(){
 		
         return new Object[][] {
         	
@@ -36,7 +36,7 @@ public class TestDataProviderClass {
 	 * Columns - Number of parameters in test data.
 	 */
 	@DataProvider(name="CountryVerificationTestData")
-    public static Object[][] getDataforAPI(){
+    public static Object[][] getTestDataforAPI(){
 		
         return new Object[][] {
         	
