@@ -12,13 +12,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class WebDriverSingleton {
 	
-	// instance of singleton class
+		// instance of singleton class
 		private static WebDriverSingleton instanceofWebdriver=null;
 		
 		// instance of WebDriver
 		private WebDriver driver;
 		
-		// Constructor
+		// private Constructor
 		private WebDriverSingleton() {
 			
 			//Please change the path here for Mac machine to ' System.getProperty("user.dir")+"//chromedriver.exe" ' replace '\\' with '//'
@@ -28,7 +28,10 @@ public class WebDriverSingleton {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
 		
-		// TO create instance of class
+		
+		/**
+		 * @return WebDriverSingleton instance
+		 */
 		public static WebDriverSingleton getInstanceofWebdriver() {
 			if(instanceofWebdriver == null) {
 				instanceofWebdriver = new WebDriverSingleton();
@@ -37,7 +40,10 @@ public class WebDriverSingleton {
 			return instanceofWebdriver;
 		}
 
-		// To get driver
+
+		/**
+		 * @return WebDriver instance
+		 */
 		public WebDriver getDriver() {
 			
 			return driver;
