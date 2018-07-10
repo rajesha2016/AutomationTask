@@ -14,15 +14,15 @@ Build Tool- Maven
 
 # Framework Understanding:
 
-I have used Singleton Design Pattern of Java to have one session of WebDriver. The implemented class is WebDriverSingleton.java inside leverton.automation.framework package.
+I have used Singleton Design Pattern of Java to have one session of WebDriver. The implemented class is WebDriverSingleton.java inside "leverton.automation.framework package".
 
 Page Object Model to store all webelements of Login page InvalidUILoginPage.java and action inside test class InvalidUILoginTest.java for UI test.
 
 I am using TestNG framework to write my test for both UI & API. TestInitialization.java class initialize the test for TestNG @BeforeTest pass the AUT URL and @AfterTest close all session of browser. Utilities.java class has all necessary methods that are needed for both UI & API test.
 
-TestNG has @DataProvider annotation which is used for Parameterizing the tests, TestDataProviderClass.java is the Test data class for both UI & API tests
+TestDataProviderClass.java is the Test data class for both UI & API tests. TestNG @DataProvider annotation used for Parameterizing the tests.
 
-config.properties file holds the URL of both UI & API
+config.properties file holds the URL of both UI & API.
 
 # Test Execution:
 
