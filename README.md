@@ -31,5 +31,5 @@ Note: I have developed in Windows OS, if you are running this project in Mac OS 
 2. 'Utilities.java' class inside initConfig() method where config.properties file path has mentioned. Change the statement ' FileInputStream readConfig = new FileInputStream(System.getProperty("user.dir")+ "\\\config.properties"); ' to ' FileInputStream readConfig = new FileInputStream(System.getProperty("user.dir")+ "//config.properties"); ' as per Mac OS standard
 
 
-Clone the GITHUB url to eclipse and right click on the testng.xml file inside the "com.automation.task" project and run as TestNG Suite. It will run both API and UI test. Another way is run respective classes invdividually from eclipse "InvalidUILoginTest.java" and "CountryValidationAPITest.java"
+Clone or download project from the GITHUB url to eclipse and right click on the testng.xml file inside the "com.automation.task" project and run as TestNG Suite. It will run both API and UI test. Another way is run respective classes invdividually from eclipse "InvalidUILoginTest.java" and "CountryValidationAPITest.java"
 
