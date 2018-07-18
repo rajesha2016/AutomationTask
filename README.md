@@ -1,4 +1,4 @@
-# UI and API AutomationTask:
+# Selenium Automation framework with Singleton designpattern :
 
 Tools & Frameworks used:
 
