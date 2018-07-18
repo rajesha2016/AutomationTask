@@ -1,4 +1,4 @@
-package leverton.Automation.Test;
+package com.Automation.Test;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -10,8 +10,8 @@ import org.json.JSONArray;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import leverton.automation.framework.TestDataProviderClass;
-import leverton.automation.framework.Utilities;
+import com.automation.framework.TestDataProviderClass;
+import com.automation.framework.Utilities;
 
 /**
  * @author r.moharana

@@ -1,4 +1,4 @@
-package leverton.automation.framework;
+package com.automation.framework;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
@@ -22,14 +22,14 @@ public class TestInitialization extends Utilities{
 	public void intializeTest() {
 		
 		initConfig();
-		driver.get(config.getProperty("APPLICATIONURL"));		
+		driver.get(config.getProperty("DEMOURL"));		
 	}
 		
 	
 	@AfterTest
 	public void tearDown(){
 		
-		driver.quit();
+		//driver.quit();
 	}
 
 }

@@ -1,12 +1,11 @@
-package leverton.Automation.Test;
+package com.Automation.Test;
 
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import leverton.Automation.TestPage.InvalidUILoginPage;
-import leverton.automation.framework.TestDataProviderClass;
-import leverton.automation.framework.TestInitialization;
+import com.Automation.TestPage.InvalidUILoginPage;
+import com.automation.framework.TestDataProviderClass;
+import com.automation.framework.TestInitialization;
 
 
 /**
@@ -25,6 +24,8 @@ public class InvalidUILoginTest extends TestInitialization{
 				
 				//this initElements method will create all WebElements
 				InvalidUILoginPage login_page=PageFactory.initElements(driver, InvalidUILoginPage.class);
+				String parent=driver.getWindowHandle();
+				
 				
 				//pass username and password
 				login_page.enterInvalidCredentials(_wrongUserName, _wrongPassword);

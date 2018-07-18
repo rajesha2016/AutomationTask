@@ -1,4 +1,4 @@
-package leverton.automation.framework;
+package com.automation.framework;
 
 import java.util.concurrent.TimeUnit;
 

@@ -1,4 +1,4 @@
-package leverton.Automation.TestPage;
+package com.Automation.TestPage;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,6 +21,7 @@ public class InvalidUILoginPage {
 	
 	@FindBy(xpath="//p[@class='subtitle']")
 	WebElement errorMessageText;
+	
 	
 	// This method set user name and password to the respective fields
 	public void enterInvalidCredentials(String uName, String pWord) {
