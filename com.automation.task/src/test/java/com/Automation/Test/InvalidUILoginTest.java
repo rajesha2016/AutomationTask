@@ -26,7 +26,7 @@ public class InvalidUILoginTest extends TestInitialization{
 				//this initElements method will create all WebElements
 				InvalidUILoginPage login_page=PageFactory.initElements(driver, InvalidUILoginPage.class);
 				
-				//pass username and password
+				//pass user name and password
 				login_page.enterInvalidCredentials(_wrongUserName, _wrongPassword);
 				login_page.clickLoginButton();
 				
