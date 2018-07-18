@@ -1,5 +1,6 @@
 package com.Automation.Test;
 
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -24,8 +25,6 @@ public class InvalidUILoginTest extends TestInitialization{
 				
 				//this initElements method will create all WebElements
 				InvalidUILoginPage login_page=PageFactory.initElements(driver, InvalidUILoginPage.class);
-				String parent=driver.getWindowHandle();
-				
 				
 				//pass username and password
 				login_page.enterInvalidCredentials(_wrongUserName, _wrongPassword);
