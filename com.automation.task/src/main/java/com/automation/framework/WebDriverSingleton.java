@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 /**
  * @author r.moharana
  * Singleton Design Pattern of Java
@@ -22,7 +24,8 @@ public class WebDriverSingleton {
 		private WebDriverSingleton() {
 			
 			//Please change the path here for Mac machine to ' System.getProperty("user.dir")+"//chromedriver.exe" ' replace '\\' with '//'
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver= new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
