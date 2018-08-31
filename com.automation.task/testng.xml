@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="leverton.Automation.Test.CountryValidationAPITest"/>
+      <class name="com.Automation.Test.CountryValidationAPITest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
