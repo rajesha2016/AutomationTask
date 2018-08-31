@@ -31,7 +31,7 @@ public class InvalidUILoginTest extends TestInitialization{
 				login_page.clickLoginButton();
 				
 				//validate the error message user get after entering incorrect username and password
-				Assert.assertEquals(login_page.getErrorMessage(), _errorMessageToBeValidated,"Error message text validated successfully");
+				Assert.assertEquals(login_page.getErrorMessage(), _errorMessageToBeValidated,"Expected text is not matching with actual");
 				
 				System.out.println("*** Automated UI Test passed for user name "+_wrongUserName+" & password "+_wrongPassword+" ***" );
 				

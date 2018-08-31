@@ -33,10 +33,13 @@ public class CountryValidationAPITest extends Utilities{
 				conn.setRequestProperty("Accept", "application/json");
 	
 				//verify response code of API
-				if (conn.getResponseCode() != 200) {
+				
+				//Assert.assertTrue(conn.getResponseCode() == 200);
+				Assert.assertTrue(conn.getResponseCode() == 200, " code: "+conn.getResponseCode());
+				/*if (conn.getResponseCode() == 200) {
 					
 					throw new RuntimeException(" HTTP error code : "+ conn.getResponseCode());
-				}
+				}*/
 				
 				Scanner scan = new Scanner(url.openStream());
 				String entireResponse = new String();
