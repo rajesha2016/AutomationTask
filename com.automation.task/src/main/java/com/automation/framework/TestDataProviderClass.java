@@ -42,7 +42,8 @@ public class TestDataProviderClass {
         	
             { "Germany"},
             { "India"},
-            { "Australia"}
+            { "Australia"},
+            { "France" }
             
         };  
 	}
